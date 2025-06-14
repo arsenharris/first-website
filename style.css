@@ -1,0 +1,171 @@
+/* header{
+    display: flex;
+    
+} */
+/*  for id use under score_ for class use dash- */
+/* Utility classes */
+
+:root {
+    --brand: #8246af;
+    --space-small:8px;
+    --space-medium:16px;
+    --space-large:32px;
+    --space-xl:64px;
+    --action: #ffa300;
+    --white: #ffffff;
+    --base-light: #cdb5df;
+    --base-dark: #0d0711;
+    --black: #111111;
+}
+
+/* cmd shift L will highlight all instances on the page */
+
+
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+
+/* end of utility classes */
+/* header styles  */
+
+.logo{
+    max-height: 100px;
+    width: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 4px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+        list-style: none;
+
+}
+
+/* end of header styles */
+/* hero styles  */
+.hero{
+    background-color: (var(--brand));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: orange;
+}
+
+/*  I like having different setting for padding and applying this to whatever html structure i want to apply */
+
+.padding-small{
+    padding: 8px;
+}
+
+.padding-medium{
+    padding: 16px;
+}
+
+.padding-large{
+    padding: 32px;
+}
+
+.padding-xl{
+    padding: 64px;
+}
+
+article .icon{
+    width: 24px;
+}
+
+.icon{
+    width: 32px;
+}
+
+article {
+        background-color: #cdb5df;
+        margin: 5px;
+        border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: orange;
+    padding: 12px 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* form  */
+
+
+section h2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+}
+form{
+    width: 400px;
+    text-align: left;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* footer */
+.contact-form {
+   padding: 48px 16px;
+   border-radius: 10px;
+   margin: 5px 10px;
+ }
+
+.contact-form input, .contact-form select{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+
+.contact-form textarea{
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+}
+
+.contact-form h2{
+    color: blue;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+/* homework and to do
+-get code from slack and add into a new snippet and into a project
+this is for reset
+
+:root variable
+
+
+
+*/

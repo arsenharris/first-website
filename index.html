@@ -8,83 +8,80 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- search for this-->
 <meta name="viewport" content="width, initial-scale=1.0"> <!-- search for this-->
 <title> She Codes Website</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
+<!-- this is a commment as well. press cmd and hold slash key -->
 <body>
-    <header>
-        <div class="mobile-header">
+
+    <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+    </script>
+    <header class="flex space-between padding-large">
+        <div class="logo">
             <img src="img/logo.png" alt=" The SheCodes Plus Logo" class="logo">
-            
+
         </div>
         <nav class="desktop-nav" aria-label="Primary">
-            <ul>
-                <li>
-                    <a href="#">Coders </a>
-                </li>
-
-                 <li>
-                    <a href="#">Mentors </a>
-                </li>
-
-                 <li>
-                    <a href="#">Partners </a>
-                </li>
-
-                 <li>
-                    <a href="#">Blog </a>
-                </li>
-                 <li>
-                    <a href="#">Contact </a>
-                </li>
+            <ul class="flex">
+                <li><a href="#">Coders </a></li>
+                <li><a href="#">Mentors </a></li>
+                <li><a href="#">Partners </a></li>
+                <li><a href="#">Blog </a></li>
+                <li><a href="#">Contact </a></li>
             </ul>
 
         </nav>
     </header>
 
     <main>
-        <section> 
+        <section class="hero padding-medium"> 
             <h1> 
                 A <span> movement </span> devoted to helping women learn tech skills.
             </h1>
-            <a href=""> Start Learning</a> 
+            <a href="" class="btn-primary"> Start Learning</a> 
 
         </section>
 
-         <section> 
-            <artcile>
-                <img class="icon" src="img/tools.svg" alt ="a wrench and a screw driver in cross shape ">
+         <section class="flex"> 
+            <article class="padding-medium">
+                <img class="icon padding-medium" src="img/tools.svg" alt ="a wrench and a screw driver in cross shape ">
                 <h2>1 Day Workshops</h2>
                 <p> Whether you're interested in coding as a career, or just looking to see what it's all about, our free one day workshops are the perfect starting point.</p>
                 <a href="#" class="btn-primary">Apply</a>
-            </artcile>
-            <article>
-                <img class="icon" src="img/lightning.svg" alt ="lightning icon ">
+            </article>
+            <article class="padding-medium">
+                <img class="icon padding-medium" src="img/lightning.svg" alt ="lightning icon ">
                 <h2>1 Week Flash</h2>
                 <p> Discover the fundamentals of tech in just one week. Flash is a one week taster program, aimed at teaching you the basics of the key emerging fields in tech.</p>
                 <a href="#" class="btn-primary">Apply</a>
             </article>
-            <article>
-                <img class="icon" src="img/plus.svg" alt ="lightning icon ">
+            <article class="padding-medium">
+                <img class="icon padding-medium" src="img/plus.svg" alt ="lightning icon ">
                 <h2>6 Month Plus</h2>
                 <p> She Codes Plus is a program providing an alternate pathway within tech. The Plus program is perfect for you if your desire is to enter a tech career.</p>
                 <a href="#" class="btn-primary">Apply</a>
             </article>
         </section>
 
-        <section> 
+        <section class="contact-form"> 
             <h2> Get in Touch</h2>
             <form>
                 <label for="your name"> Your Name </label>
-                <input type="text" id="your-name">
+                <input type="text" id="your-name"><br>
                 <label for="city"> Your City </label>
                 <select>
                     <option value="Brisbane"> Brisbane </option>
                     <option value="Perth"> Perth </option>
                     <option value="Moon"> The Moon </option>
-                </select>
+                </select><br>
                 <label for="message"> Your Message </label>
                 <textarea name="message-text" id="message" rows="10"></textarea>
-                <input type="submit" value="Submit">
+                <input class=" btn-primary" value="Submit">
 
             </form>
         </section>
@@ -94,13 +91,13 @@
         <nav class="desktop-nav" aria-label="Primary">
             <ul>
                 <li>
-                    <a href="#"> <img src="img/instagram.svg" alt=" Instagram"> </a>
+                    <a href="#"> <img src="img/instagram.svg" alt=" Instagram" class="icon"> </a>
                 </li>
                  <li>
-                    <a href="#"> <img src="img/slack.svg" alt=" Slack"> </a>
+                    <a href="#"> <img src="img/slack.svg" alt=" Slack" class="icon"> </a>
                 </li>
                  <li>
-                    <a href="#"> <img src="img/github.svg" alt=" Github"> </a>
+                    <a href="#"> <img src="img/github.svg" alt=" Github" class="icon"> </a>
                 </li>
             </ul>
         </nav>
